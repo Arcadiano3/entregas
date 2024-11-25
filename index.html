@@ -5,78 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Tomamos Un Mate?</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style2.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    </style>
 </head>
 
 <body>
     <header>
-        <!--<div>
-            <img src="images/logos/logosinfondo.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        -Página Principal-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/yerbas.html">
-                        -Yerbas-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/mates.html">
-                        -Mates-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/termos.html">
-                        -Termos-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/alfajores.html">
-                        -Alfajores-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contacto">
-                        -Contacto-
-                    </a>
-                </li>
-            </ul>
-        </nav> -->
-
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary gray-bg">
+            <div class="container-fluid bg-success">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#" style="padding: 0; margin: 0;">
-                    <img src="images/logos/logosinfondo.png" alt="Logo" class="img-fluid" style="height: 50px; width: auto;">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logos/logosinfondo.png" alt="Logo" class="img-fluid logo">
                 </a>
                 <!-- Dropdown button for mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <!-- Home -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
                         </li>
                         <!-- Dropdown button -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Productos
                             </a>
                             <ul class="dropdown-menu">
@@ -97,35 +54,42 @@
     </header>
 
     <main>
-        <h1>
-            Bienvenidos a la tienda Online de ¿Tomamos Un Mate?
+        <h1 class="text-center title mb-3 mt-3">
+            Bienvenidos a la tienda Online de <span class="fw-bold bg-success green-font "><br>¿Tomamos Un Mate?</span>
         </h1>
-        <h2>
-            Puedes consultar todas nuestras opciones en el menú de navegación arriba
+        <h2 class="text-center">
+            Puedes consultar todas nuestras variedades en el menú de navegación <span class="fw-bold">arriba</span>
         </h2>
+
+
+        <div>
+            <h3 class="text-decoration-underline text-center fw-bold mb-5">Productos más buscados</h3>
+        </div>
+        <section class="grid-container">
+
+            <div class="image grid-item">
+                <img src="images/yerba/canarias1kg.png" alt="Yerba Canarias de 1 kilogramo.">
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laudantium nesciunt
+                    doloremque,voluptatibus distinctio quae voluptatum placeat provident? Laudantium unde possimus optio
+                    quae! Sintmolestias inventore placeat, aperiam saepe odit?
+                </p>
+            </div>
+
+            <div class="image grid-item">
+                <img src="images/mates/imperialalpaca.png" alt="Mate Imperial con Virola de Alpaca">
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem incidunt, odio
+                    voluptatibusexpedita quod ex debitis repudiandae commodi numquam recusandae qui, dolores enim fugiat
+                    quis vero omnisaperiam consequuntur.
+                </p>
+            </div>
+        </section>
     </main>
 
-    <section>
-        <div>
-            <h3>Productos más buscados</h3>
-        </div>
 
-        <div class="image">
-            <img src="images/yerba/canarias1kg.png" alt="Yerba Canarias de 1 kilogramo.">
-
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laudantium nesciunt
-                doloremque,voluptatibus distinctio quae voluptatum placeat provident? Laudantium unde possimus optio
-                quae! Sintmolestias inventore placeat, aperiam saepe odit?</p>
-        </div>
-
-        <div class="image">
-            <img src="images/mates/imperialalpaca.png" alt="Mate Imperial con Virola de Alpaca">
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem incidunt, odio
-                voluptatibusexpedita quod ex debitis repudiandae commodi numquam recusandae qui, dolores enim fugiat
-                quis vero omnisaperiam consequuntur.</p>
-        </div>
-    </section>
 
     <footer id="contacto">
 
@@ -150,7 +114,9 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 

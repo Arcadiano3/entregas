@@ -1,21 +1,79 @@
+/* First Mobile */
+
+/* Config Global */
+html body {
+    background-color: #2e3338;
+    color: #f3f3f3;
+}
+
+/* Size logo */
+header nav div a .logo {
+    height: 150px;
+    width: auto;
+}
+
+/* Navbar */
+.navbar {
+    margin-top: -8px;
+}
+
 .navbar-nav {
-    font-size: 1.4rem; /* Aumenta el tamaño del texto */
-    font-weight: bold; /* Negrita */
-    gap: 2rem; /* Espacio entre los elementos */
+    font-size: 1.6rem;
+    font-weight: bold;
+    gap: 2rem;
 }
 
-.navbar-brand img {
-    max-height: 500px; /* Asegura que el logo no sea demasiado grande */
+.nav-link {
+    text-transform: uppercase;
+    color: black;
+    padding: 0.5rem;
+    border: 2px solid rgb(43, 42, 42);
+    border-radius: 10px;
+    transition: background-color 0.4s, color 0.4s;
 }
 
-.navbar-nav .nav-link {
-    text-transform: uppercase; /* Mayúsculas */
-    padding: 0.5rem 1rem; /* Ajuste de espacio interno */
-    border-radius: 5px; /* Bordes redondeados */
+.nav-link:hover {
+    background-color: #08311d;
+    color: #B6DE84;
 }
 
-.nav-link.active {
-    background-color: green; /* Fondo rojo para el enlace activo */
-    color: white; /* Texto blanco */
+/* Dropdown Menu */
+.dropdown-menu {
+    border: 2px solid black;
+    background-color: #08311d;
 }
 
+.dropdown-item {
+    color:whitesmoke;
+    text-transform: uppercase;
+    color: #B6DE84;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s, border 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #B6DE84;
+    border: 1px solid rgb(73, 71, 71);
+    color: #08311d;
+}
+
+/* Titles */
+
+.title {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.green-font {
+    color: #B6DE84;
+}
+
+/* Section */
+
+.grid-container {
+    margin: 80px auto;
+    width: 90%;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
