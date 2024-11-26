@@ -95,7 +95,6 @@ header nav div a .logo {
 }
 
 /* Footer */
-
 footer div {
     font-size: 1.5rem;
 }
@@ -120,7 +119,6 @@ footer div {
     height: 120px;
     width: auto;
 }
-
 
 /* Media Query for computer */
 @media (min-width: 1024px) {
