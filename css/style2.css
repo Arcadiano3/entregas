@@ -10,6 +10,7 @@ html body {
 header nav div a .logo {
     height: 150px;
     width: auto;
+    padding: 5px;
 }
 
 /* Navbar */
@@ -70,10 +71,60 @@ header nav div a .logo {
 
 /* Section */
 
-.grid-container {
-    margin: 80px auto;
+.flex-container {
+    margin: auto;
     width: 90%;
-    border: 2px solid black;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.image {
+    border: 2px solid whitesmoke;
+}
+
+.image img {
+    height: 15rem;
+    width: auto;
+}
+
+.image p {
+    max-width: 500px;
+    margin: 5px;
+}
+
+/* Footer */
+
+footer div {
+    font-size: 1.5rem;
+}
+
+.contact-logo {
+    border: 2px solid whitesmoke;
+    color: #B6DE84;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-logo p {
+    color:#B6DE84
+}
+
+.contact-logo:hover {
+    background-color: #08311d;
+}
+
+.image-footer {
+    height: 120px;
+    width: auto;
+}
+
+
+/* Media Query for computer */
+@media (min-width: 1024px) {
+    .contact-logo {
+        margin: 0 40%;
+    }
 }
