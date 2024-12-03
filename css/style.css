@@ -1,128 +1,102 @@
 /* First Mobile */
-
-/* Config Global */
+/* Config global */
 html body {
-    background-color: #2e3338;
-    color: #f3f3f3;
+  background-color: #2e3338;
+  color: #f3f3f3;
+}
+html body header nav {
+  margin-top: -8px;
+}
+html body header nav div a .logo {
+  height: 150px;
+  width: auto;
+  padding: 5px;
+}
+html body header nav div div ul {
+  font-size: 1.6rem;
+  font-weight: bold;
+  gap: 2rem;
+}
+html body header nav div div ul li .nav-link {
+  text-transform: uppercase;
+  color: black;
+  padding: 0.5rem;
+  border: 2px solid rgb(43, 42, 42);
+  border-radius: 10px;
+  transition: background-color 0.4s, color 0.4s;
+}
+html body header nav div div ul li .nav-link:hover {
+  background-color: #08311d;
+  color: #B6DE84;
+}
+html body header nav div div ul li .dropdown-menu {
+  border: 2px solid black;
+  background-color: #08311d;
+}
+html body header nav div div ul li .dropdown-menu li .dropdown-item {
+  text-transform: uppercase;
+  color: #B6DE84;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s, border 0.2s;
+}
+html body header nav div div ul li .dropdown-menu li .dropdown-item:hover {
+  background-color: #B6DE84;
+  border: 1px solid rgb(73, 71, 71);
+  color: #08311d;
+}
+html body main h1 {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+html body main h1 span {
+  color: #B6DE84;
+}
+html body main h2 {
+  margin: 0 20px;
+}
+html body main section {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+html body main section div {
+  border: 2px solid whitesmoke;
+}
+html body main section div img {
+  height: 15rem;
+  width: auto;
+}
+html body main section div p {
+  max-width: 500px;
+  margin: 5px;
+}
+html body footer div {
+  font-size: 1.5rem;
+}
+html body footer .contact-logo {
+  border: 2px solid whitesmoke;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+html body footer .contact-logo p {
+  color: #B6DE84;
+}
+html body footer .contact-logo img {
+  height: 120px;
+  width: auto;
+}
+html body footer .contact-logo:hover {
+  background-color: #08311d;
 }
 
-/* Size logo */
-header nav div a .logo {
-    height: 150px;
-    width: auto;
-    padding: 5px;
-}
-
-/* Navbar */
-.navbar {
-    margin-top: -8px;
-}
-
-.navbar-nav {
-    font-size: 1.6rem;
-    font-weight: bold;
-    gap: 2rem;
-}
-
-.nav-link {
-    text-transform: uppercase;
-    color: black;
-    padding: 0.5rem;
-    border: 2px solid rgb(43, 42, 42);
-    border-radius: 10px;
-    transition: background-color 0.4s, color 0.4s;
-}
-
-.nav-link:hover {
-    background-color: #08311d;
-    color: #B6DE84;
-}
-
-/* Dropdown Menu */
-.dropdown-menu {
-    border: 2px solid black;
-    background-color: #08311d;
-}
-
-.dropdown-item {
-    color:whitesmoke;
-    text-transform: uppercase;
-    color: #B6DE84;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s, border 0.2s;
-}
-
-.dropdown-item:hover {
-    background-color: #B6DE84;
-    border: 1px solid rgb(73, 71, 71);
-    color: #08311d;
-}
-
-/* Titles */
-
-.title {
-    font-size: 2rem;
-    margin: 0 10px;
-}
-
-.green-font {
-    color: #B6DE84;
-}
-
-/* Section */
-
-.flex-container {
-    margin: auto;
-    width: 90%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.image {
-    border: 2px solid whitesmoke;
-}
-
-.image img {
-    height: 15rem;
-    width: auto;
-}
-
-.image p {
-    max-width: 500px;
-    margin: 5px;
-}
-
-/* Footer */
-footer div {
-    font-size: 1.5rem;
-}
-
-.contact-logo {
-    border: 2px solid whitesmoke;
-    color: #B6DE84;
-    padding: 1rem;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-}
-
-.contact-logo p {
-    color:#B6DE84
-}
-
-.contact-logo:hover {
-    background-color: #08311d;
-}
-
-.image-footer {
-    height: 120px;
-    width: auto;
-}
-
-/* Media Query for computer */
 @media (min-width: 1024px) {
-    .contact-logo {
-        margin: 0 40%;
-    }
+  .contact-logo {
+    margin: 0 40%;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

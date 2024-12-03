@@ -1,0 +1,142 @@
+/* First Mobile */
+/* Config global */
+// Import de archivos secundarios
+@import "utilities/variables";
+
+html {
+    body {
+        background-color: $background-color;
+        color: #f3f3f3;
+
+        header {
+
+            nav {
+                margin-top: -8px;
+
+                div {
+                    a {
+                        .logo {
+                            height: 150px;
+                            width: auto;
+                            padding: 5px;
+                        }
+                    }
+
+                    div {
+                        ul {
+                            font-size: 1.6rem;
+                            font-weight: bold;
+                            gap: 2rem;
+
+                            li {
+                                .nav-link {
+                                    text-transform: uppercase;
+                                    color: black;
+                                    padding: 0.5rem;
+                                    border: 2px solid rgb(43, 42, 42);
+                                    border-radius: 10px;
+                                    transition: background-color 0.4s, color 0.4s;
+                                }
+
+                                .nav-link:hover {
+                                    background-color: $darkgreen-color;
+                                    color: $lightgreen-color;
+                                }
+
+                                .dropdown-menu {
+                                    border: 2px solid black;
+                                    background-color: $darkgreen-color;
+
+                                    li {
+                                        .dropdown-item {
+                                            text-transform: uppercase;
+                                            color: $lightgreen-color;
+                                            font-size: 1.2rem;
+                                            transition: background-color 0.3s, color 0.3s, border 0.2s;
+                                        }
+
+                                        .dropdown-item:hover {
+                                            background-color: $lightgreen-color;
+                                            border: 1px solid rgb(73, 71, 71);
+                                            color: $darkgreen-color;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            h1 {
+                font-size: 2rem;
+                margin: 0 10px;
+
+                span {
+                    color: $lightgreen-color;
+                }
+            }
+
+            h2 {
+                margin: 0 20px
+            }
+
+            section {
+                margin: auto;
+                width: 90%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                gap: 20px;
+
+                div {
+                    border: 2px solid whitesmoke;
+
+                    img {
+                        height: 15rem;
+                        width: auto;
+                    }
+
+                    p {
+                        max-width: 500px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            div {
+                font-size: 1.5rem;
+            }
+
+            .contact-logo {
+                border: 2px solid whitesmoke;
+                padding: 1rem;
+                border-radius: 20px;
+                transition: background-color 0.3s;
+
+                p {
+                    color: $lightgreen-color;
+                }
+
+                img {
+                    height: 120px;
+                    width: auto;
+                }
+            }
+            .contact-logo:hover {
+                background-color: $darkgreen-color;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-logo {
+        margin: 0 40%;
+    }
+}
