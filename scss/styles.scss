@@ -2,6 +2,7 @@
 /* Config global */
 // Import de archivos secundarios
 @import "utilities/variables";
+@import "utilities/mixin";
 
 html {
     body {
@@ -85,12 +86,7 @@ html {
             }
 
             section {
-                margin: auto;
-                width: 90%;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-around;
-                gap: 20px;
+                @include flex;
 
                 div {
                     border: 2px solid whitesmoke;
