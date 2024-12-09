@@ -54,12 +54,12 @@ html {
                                             color: $lightgreen-color;
                                             font-size: 1.2rem;
                                             transition: background-color 0.3s, color 0.3s, border 0.2s;
-                                        }
 
-                                        .dropdown-item:hover {
-                                            background-color: $lightgreen-color;
-                                            border: 1px solid rgb(73, 71, 71);
-                                            color: $darkgreen-color;
+                                            &:hover {
+                                                background-color: $lightgreen-color;
+                                                border: 1px solid rgb(73, 71, 71);
+                                                color: $darkgreen-color;
+                                            }
                                         }
                                     }
                                 }
@@ -124,6 +124,7 @@ html {
                     width: auto;
                 }
             }
+
             .contact-logo:hover {
                 background-color: $darkgreen-color;
             }
@@ -131,8 +132,6 @@ html {
     }
 }
 
-@media (min-width: 1024px) {
-    .contact-logo {
-        margin: 0 40%;
-    }
-}
+// import mq
+
+@import "utilities/mq";
